@@ -16,3 +16,6 @@
 [submodule "packages/pi-ssh-tools"]
 	path = packages/pi-ssh-tools
 	url = git@github.com:HackXIt/pi-ssh-tools.git
+[submodule "packages/pi-local-browser-automation"]
+	path = packages/pi-local-browser-automation
+	url = git@github.com:HackXIt/pi-local-browser-automation.git

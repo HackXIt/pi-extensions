@@ -1,25 +1,38 @@
 # pi-extensions
 
-HackXIt Pi extension meta-package and umbrella repository for owned Pi packages.
+HackXIt umbrella repository for owned Pi packages.
 
 ## Packages
 
-This repository is intended to install the owned Pi packages under `packages/`:
+This repository tracks the owned Pi packages under `packages/` as git submodules:
 
 - `pi-grill-session`
-- `pi-kanban`
+- `pi-kanban` (private)
 - `pi-ready-notification`
 - `pi-session-autonamer`
 - `pi-session-handover`
-- `pi-local-browser-automation` (pending: no `HackXIt/pi-local-browser-automation` GitHub repository found yet)
+- `pi-local-browser-automation` (private)
 - `pi-ssh-tools`
 
-`pi-continuity` is intentionally excluded from this initial meta-package.
+`pi-continuity` is intentionally excluded from this initial umbrella repository.
 
 ## Install
 
+Install the individual package repositories directly with Pi. Do not install this umbrella repository as a meta-package: Pi's native git package install does not initialize submodules.
+
+Examples:
+
 ```bash
-pi install git:github.com/HackXIt/pi-extensions
+pi install git:https://github.com/HackXIt/pi-ssh-tools
+pi install git:https://github.com/HackXIt/pi-ready-notification
+pi install git:https://github.com/HackXIt/pi-session-autonamer
+pi install git:https://github.com/HackXIt/pi-session-handover
+pi install git:https://github.com/HackXIt/pi-grill-session
 ```
 
-Implementation note: installability still needs to be proven, especially whether Pi initializes git submodules for git-installed packages. If it does not, this repository needs an explicit install mechanism before being considered installable.
+Private packages require GitHub access and SSH/HTTPS credentials:
+
+```bash
+pi install git:git@github.com:HackXIt/pi-kanban.git
+pi install git:git@github.com:HackXIt/pi-local-browser-automation.git
+```

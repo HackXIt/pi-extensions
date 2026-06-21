@@ -1,29 +1,12 @@
 {
   "name": "@hackxit/pi-extensions",
   "version": "0.1.0",
-  "description": "HackXIt Pi extension meta-package.",
+  "description": "HackXIt Pi extension umbrella repository.",
   "type": "module",
-  "keywords": ["pi-package"],
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/HackXIt/pi-extensions.git"
   },
-  "pi": {
-    "extensions": [
-      "packages/pi-grill-session/src/index.ts",
-      "packages/pi-ready-notification/src/index.ts",
-      "packages/pi-session-autonamer/src/index.ts",
-      "packages/pi-session-handover/src/index.ts",
-      "packages/pi-ssh-tools/index.ts"
-    ],
-    "skills": [
-      "packages/pi-grill-session/skills/grill-session",
-      "packages/pi-grill-session/skills/grill-session-docs",
-      "packages/pi-kanban/skills"
-    ],
-    "prompts": [
-      "packages/pi-kanban/prompts"
-    ]
-  }
+  "private": true
 }
