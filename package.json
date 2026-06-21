@@ -15,12 +15,14 @@
       "packages/pi-ready-notification/src/index.ts",
       "packages/pi-session-autonamer/src/index.ts",
       "packages/pi-session-handover/src/index.ts",
-      "packages/pi-ssh-tools/index.ts"
+      "packages/pi-ssh-tools/index.ts",
+      "packages/pi-local-browser-automation/extensions/browser-automation-local.ts"
     ],
     "skills": [
       "packages/pi-grill-session/skills/grill-session",
       "packages/pi-grill-session/skills/grill-session-docs",
-      "packages/pi-kanban/skills"
+      "packages/pi-kanban/skills",
+      "packages/pi-local-browser-automation/skills"
     ],
     "prompts": [
       "packages/pi-kanban/prompts"
