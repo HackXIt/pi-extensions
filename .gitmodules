@@ -1,0 +1,18 @@
+[submodule "packages/pi-grill-session"]
+	path = packages/pi-grill-session
+	url = git@github.com:HackXIt/pi-grill-session.git
+[submodule "packages/pi-kanban"]
+	path = packages/pi-kanban
+	url = git@github.com:HackXIt/pi-kanban.git
+[submodule "packages/pi-ready-notification"]
+	path = packages/pi-ready-notification
+	url = git@github.com:HackXIt/pi-ready-notification.git
+[submodule "packages/pi-session-autonamer"]
+	path = packages/pi-session-autonamer
+	url = git@github.com:HackXIt/pi-session-autonamer.git
+[submodule "packages/pi-session-handover"]
+	path = packages/pi-session-handover
+	url = git@github.com:HackXIt/pi-session-handover.git
+[submodule "packages/pi-ssh-tools"]
+	path = packages/pi-ssh-tools
+	url = git@github.com:HackXIt/pi-ssh-tools.git
